@@ -1,3 +1,4 @@
+require 'pry'
 class TicTacToe
   
   def initialize
@@ -41,6 +42,7 @@ def position_taken?(index)
 
   def current_player
     turn_count.even? ? "X" : "O"
+    binding.pry
   end
 
   def turn
